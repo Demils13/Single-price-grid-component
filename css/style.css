@@ -1,0 +1,258 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+/******************************************
+/* GENERAL STYLES
+/*******************************************/
+
+body {
+    font-family: Karla, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.community {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.subscription {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(179, 62%, 43%);
+}
+
+.why-us {
+    background-color: hsl(179, 44%, 54%);
+    color: hsl(204, 43%, 93%);
+}
+
+/******************************************
+/* MOBILE STYLES
+/*******************************************/
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: hsl(204, 43%, 93%);
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 100vh;
+    }
+    
+    .section {
+        width: 70%;
+        height: 260px;
+        padding: 30px;
+    }
+
+    .community {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        color: hsl(179, 62%, 43%);
+    }
+
+    h4 {
+        font-size: 1.1rem;
+        color: hsl(71, 73%, 54%);
+        margin-top: 1.5rem;
+    }
+
+    .community p {
+        font-size: 1.1rem;
+        font-weight: 580;
+        color: hsl(218, 22%, 67%);
+        margin-top: 1.5rem;
+    }
+
+    .subscription h3 {
+        font-size: 1.1rem;
+        font-weight: bolder;
+        margin-bottom: 1.5rem;
+    }
+
+    .price {
+        font-size: 1.8rem;
+    }
+
+    .per-month {
+        font-size: 1rem;
+        margin-left: 10px;
+        color: hsl(204, 43%, 93%);
+
+    }
+
+    .subscription p {
+        margin-top: 1rem;
+    }
+
+    .button {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 0 auto;
+        margin-top: 2.5rem;
+        padding: 15px 140px;
+        border-radius: 6px;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(71, 73%, 54%);
+        border: 1px solid hsl(179, 62%, 43%);
+
+    }
+
+    .why-us {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .why-us h3 {
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 1.5rem;
+    } 
+}
+
+
+/******************************************
+/* DESKTOP STYLE
+/*******************************************/
+
+@media only screen and (min-width: 601px) {
+    body {
+        display: flex;
+        align-items: center;
+        background-color: hsl(204, 43%, 93%);
+        min-height: 100vh;
+    }
+
+    .card {
+        width: 900px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .community {
+        height: 200px;
+        width: 70%;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+
+    }
+
+    .subscription,
+    .why-us {
+        height: 280px;
+        width: 35%;
+    }
+
+    .community,
+    .subscription,
+    .why-us {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        color: hsl(179, 62%, 43%);
+    }
+
+    h4 {
+        font-size: 1.1rem;
+        color: hsl(71, 73%, 54%);
+        margin-top: 1.5rem;
+    }
+
+    .community p {
+        font-size: 1rem;
+        font-weight: 580;
+        color: hsl(218, 22%, 67%);
+        margin-top: 1rem;
+        
+    }
+
+    .subscription h3 {
+        font-size: 1.1rem;
+        font-weight: bolder;
+        margin-bottom: 1.5rem;
+    }
+
+    .price {
+        font-size: 1.8rem;
+    }
+
+    .per-month {
+        font-size: 1rem;
+        margin-left: 10px;
+        color: hsl(204, 43%, 93%);
+
+    }
+
+    .subscription {
+        border-bottom-left-radius: 8px;
+    }
+
+    .subscription p {
+        margin-top: 1rem;
+    }
+
+    .one-dollar {
+        font-size: 0.95rem;
+    }
+
+    .one-dollar,
+    small {
+        color: hsl(204, 43%, 93%);
+    }
+
+    .button {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: 600;
+        margin: 0 auto;
+        margin-top: 2.8rem;
+        padding: 15px 90px;
+        border-radius: 6px;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(71, 73%, 54%);
+        border: 1px solid hsl(179, 62%, 43%);
+
+    }
+
+    .why-us {
+        border-bottom-right-radius: 8px;
+    }
+
+    .why-us h3 {
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 1.5rem;
+    } 
+
+}
